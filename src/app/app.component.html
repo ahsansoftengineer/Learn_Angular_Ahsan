@@ -1,0 +1,126 @@
+<!-- <h1>Hello World</h1>
+{{title}}
+<h2>Sister</h2>
+  <h3>{{siblings.sister}}</h3>
+<h2>Brother</h2>
+  <h3>{{siblings.brother[1]}}</h3>
+<a href="{{siteUrl}}"> {{siteUrl}}</a>
+<h1>Part 6 Components</h1>
+<app-user-list></app-user-list>
+<h1>Part 7 Using Other Modules & Components</h1>
+<h1>User Module</h1>
+<h2><app-login></app-login></h2>
+<h2><app-signup></app-signup></h2>
+<h1>Part 8 Functions</h1>
+<button (click)="myfunction()">Function</button>
+<input type="text" #box (keyup.enter)="myevent(box.value)"> -->
+<!-- <h1>Part 11 Property Binding</h1>
+<input type="text"  [disabled]=disabledbox value="{{name}}">
+<br>
+<br>
+<input type="text" [disabled]=disabledbox [value]=name>
+<br>
+<br>
+<button (click)=enabledbox() >Enabled Text Box</button> -->
+<!-- <h1>Part 12 If Statement</h1>
+<h1 *ngIf="false ; else elseIfBlock">
+  ngIf Statement
+</h1>
+<ng-template #elseIfBlock>
+  <h1>Else If Statement</h1> 
+</ng-template>
+<h1 *ngIf="expression;else templateName">
+  Auto Generated Code
+</h1>
+<ng-template #templateName>
+  <h2>Template Name</h2>
+</ng-template>
+<ng-template [ngIf]="color=='red'"><h1>red</h1></ng-template>
+<ng-template [ngIf]="color=='gray'"><h1>gray</h1></ng-template>
+<ng-template [ngIf]="color=='yellow'"><h1>yellow</h1></ng-template>
+<ng-template [ngIf]="color=='orange'"><h1>orange</h1></ng-template> -->
+<!-- Part 13 Switch Statements -->
+<!-- <h1><div [ngSwitch]="month">
+  <div *ngSwitchCase="'jan'">jan</div>
+  <div *ngSwitchCase="'feb'">feb</div>
+  <div *ngSwitchCase="'mar'">mar</div>
+  <div *ngSwitchCase="'apr'">apr</div>
+  <div *ngSwitchDefault>no month</div>
+</div></h1> -->
+
+<!-- Part 14 For Loop -->
+<!-- <ul>
+  <li *ngFor="let month of months">{{month}}</li>
+</ul>
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Gender</td>
+    <td>Age</td>
+    <td>Email</td>
+  </tr>
+  <tr *ngFor="let emp of employees">
+    <td>{{emp.name}}</td>
+    <td>{{emp.gender}}</td>
+    <td>{{emp.age}}</td>
+    <td>{{emp.email}}</td>
+  </tr>
+</table>
+<p>{{employeez.employee1.name}}</p>
+<p>{{employeez.employee1.gender}}</p>
+<p>{{employeez.employee1.age}}</p>
+<p>{{employeez.employee1.email}}</p> -->
+<!-- Part 15 Forms -->
+<!-- <form action="" #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+  <input type='text' name="name" ngModel placeholder="Name" /><br><br>
+  <input type='text' name="gender" ngModel placeholder="Gender" /><br><br>
+  <input type='number' name="age" ngModel placeholder="Age" /><br><br>
+  <input type='password' name="password" ngModel placeholder="password" /><br><br>
+  <button>Submit</button>
+</form> -->
+<!-- Part 16 Components -->
+<!-- <app-header></app-header>
+<app-footer></app-footer> -->
+<!-- Part 17 Style Binding -->
+<!-- <h1 style="color:orange">Heading 1</h1>
+<h1 [style.color]="'red'">Heading 2</h1>
+<h1 [style.color]="color">Heading 3</h1>
+<button (click)="ChangeColor()">Change Heading Color</button>
+<h1 [style.color]="errColor?'red':'lightgreen'">Heading 4</h1>
+<button (click)="errColor = !errColor">Change Heading 4 Color</button> -->
+<h1>Part 18 Bootstrap</h1>
+<!-- <p>
+  <ngb-alert [dismissible]="true">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+<p *ngFor="let alert of alerts">
+  <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+<p>
+  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+</p>
+<div class="btn-group btn-group-toggle">
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
+  </label>
+</div>
+<hr>
+<pre>{{model | json}}</pre> -->
+<section>
+  <div class="example-label">Basic</div>
+  <div class="example-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+</section>
