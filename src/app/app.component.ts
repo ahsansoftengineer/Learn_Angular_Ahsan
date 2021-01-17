@@ -7,11 +7,9 @@ import { AppRoutingModule } from './app-routing.module'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // Part 20 Pass Data From Parent To Child
-  parentfield = "King Kong"
-  data = {
-    name:'asim',
-    gender:'male',
-    age:'27'
+  // Part 21 Pass Data From Child To Parent
+  datafromchild:any;
+  parentReciveProperty($event:any){
+    this.datafromchild = $event;
   }
 }

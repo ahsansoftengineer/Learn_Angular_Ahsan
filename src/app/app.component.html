@@ -1,2 +1,14 @@
 <h1>Part 20 Pass Data from Parent to Child</h1>
-<app-users [parentproperty]="parentfield" [property]="data"></app-users>
+<app-users (childOutputProperty)="parentReciveProperty($event)"></app-users>
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Gender</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor="let property of datafromchild">
+        <td>{{property.name}}</td>
+        <td>{{property.gender}}</td>
+        <td>{{property.age}}</td>
+    </tr>
+</table>
