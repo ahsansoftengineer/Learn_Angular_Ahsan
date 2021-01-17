@@ -7,10 +7,6 @@ import { AppRoutingModule } from './app-routing.module'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // Part 23 Pipes
-  money:number = 12345;
-  tarikh = Date.now();
-  text:string = 'this Is mY some text to display'
+  // Part 24 Routing
   
-
 }
