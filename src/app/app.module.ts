@@ -3,30 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button'
-import { MatSliderModule } from '@angular/material/slider';
-import { UserComponent } from './user/user.component';
-import { AdminComponent } from './admin/admin.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MyDirectiveDirective } from './my-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    AdminComponent,
-    PageNotFoundComponent,
+    MyDirectiveDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    NgbModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatSliderModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
