@@ -1,14 +1,16 @@
-<h1>Part 20 Pass Data from Parent to Child</h1>
-<app-users (childOutputProperty)="parentReciveProperty($event)"></app-users>
-<table border="1">
-    <tr>
-        <td>Name</td>
-        <td>Gender</td>
-        <td>Age</td>
-    </tr>
-    <tr *ngFor="let property of datafromchild">
-        <td>{{property.name}}</td>
-        <td>{{property.gender}}</td>
-        <td>{{property.age}}</td>
-    </tr>
-</table>
+<h1>Part 23 Pipes</h1>
+<h2>{{text | uppercase}}</h2>
+<h2>{{text | lowercase}}</h2>
+<h2>{{text | titlecase}}</h2>
+<h2>{{text | slice:4:text.length | uppercase}}</h2>
+<h2>{{money | currency:'USD'}}</h2>
+<h2>{{money | currency:'Rs. '}}</h2>
+<h2>{{money | currency:'CAD'}}</h2>
+<h2>{{tarikh | date}}</h2>
+<h2>{{tarikh | date:'dd MMM, yyyy'}}</h2>
+<h2>{{tarikh | date:'full'}}</h2>
+<h2>{{tarikh | date:'medium'}}</h2>
+<h2>{{tarikh | date:'short'}}</h2>
+<h2>{{tarikh | date:'hh:mm'}}</h2>
+<h2>{{tarikh | date:'hh:mm:ss'}}</h2>
+<h2>{{tarikh | date:'mm:ss'}}</h2>

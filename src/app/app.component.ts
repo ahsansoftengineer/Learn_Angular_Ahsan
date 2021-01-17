@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // Part 21 Pass Data From Child To Parent
-  datafromchild:any;
-  parentReciveProperty($event:any){
-    this.datafromchild = $event;
-  }
+  // Part 23 Pipes
+  money:number = 12345;
+  tarikh = Date.now();
+  text:string = 'this Is mY some text to display'
+  
+
 }
