@@ -10,12 +10,14 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatSliderModule } from '@angular/material/slider';
 import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     AdminComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
