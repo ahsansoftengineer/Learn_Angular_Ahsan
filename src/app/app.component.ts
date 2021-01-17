@@ -7,6 +7,11 @@ import { AppRoutingModule } from './app-routing.module'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // Part 19 Add Material UI
-  
+  // Part 20 Pass Data From Parent To Child
+  parentfield = "King Kong"
+  data = {
+    name:'asim',
+    gender:'male',
+    age:'27'
+  }
 }
