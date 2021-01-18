@@ -1,15 +1,9 @@
-<h1>Part 28 Services + API Call</h1>
-<table border=1>
-    <tr>
-        <td>ID</td>
-        <td>Name</td>
-        <td>Gender</td>
-        <td>User_ID</td>
-    </tr>
-    <tr *ngFor="let user of userdata">
-        <td>{{user.id}}</td>
-        <td>{{user.name}}</td>
-        <td>{{user.gender}}</td>
-        <td>{{user.pakistani}}</td>
-    </tr>
-</table>
+<h1>Recap of Module and Rounting</h1>
+<!-- <app-login></app-login>
+<app-sign-up></app-sign-up> -->
+<ul>
+    <li><a routerLink="login">Log In</a></li>
+    <li><a routerLink="signup">Sign Up</a></li>
+</ul>
+<router-outlet></router-outlet>
+
