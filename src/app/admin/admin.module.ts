@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { ListComponent } from './list/list.component';
 import { LoginComponent } from './login/login.component';
-
+console.log('Admin Loaded')
 
 @NgModule({
   declarations: [ListComponent, LoginComponent],
