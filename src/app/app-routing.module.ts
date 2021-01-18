@@ -7,18 +7,18 @@ import { ListComponent as ulc} from './user/list/list.component'
 
 
 const routes: Routes = [
-  {
-    path:'admin', children:[
-     {path:'login', component:alic },
-     {path:'list', component:alc }
-    ]
-  },
-  {
-    path:'user', children:[
-     {path:'login', component:ulic },
-     {path:'list', component:ulc }
-    ]
-  }
+  // {
+  //   path:'admin', children:[
+  //    {path:'login', component:alic },
+  //    {path:'list', component:alc }
+  //   ]
+  // },
+  // {
+  //   path:'user', children:[
+  //    {path:'login', component:ulic },
+  //    {path:'list', component:ulc }
+  //   ]
+  // }
 ];
 
 @NgModule({
