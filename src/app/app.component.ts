@@ -11,9 +11,12 @@ import { UserService } from './user.service'
 export class AppComponent {
   // Part 28 Services + API Call
   userdata:any;
-  constructor(private user:UserService){
-    user.getData().subscribe(data => {
-      this.userdata = data;
-    });
+  // constructor(private user:UserService){
+  //   user.getData().subscribe(data => {
+  //     this.userdata = data;
+  //   });
+  // }
+  constructor(private values:UserService){
+    this.userdata = values.getData()
   }
 }
