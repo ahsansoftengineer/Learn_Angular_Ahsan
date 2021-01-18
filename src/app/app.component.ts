@@ -9,7 +9,5 @@ import { AppRoutingModule } from './app-routing.module';
 })
 
 export class AppComponent {
-  // constructor(private data:LoginComponent){
-  //   console.log(data.getData());
-  // }
+
 }
