@@ -1,4 +1,27 @@
-<h1>Part 35 Component Lazy Loading</h1>
-<button (click)='listloading()'>List Loading</button>
-<button (click)='loginloading()'>Login Loading</button>
-<router-outlet></router-outlet>   
+<h1>Part 41 Disabled Button Template Driven Form  </h1>
+<div class="col-sm-6">
+  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input required class="form-control" ngModel #email="ngModel"  type="email" name="email" placeholder="Email">
+      <span *ngIf="email.invalid && email.touched" style="color: red;">Required</span>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input required class="form-control" ngModel #password="ngModel" minlength="5"  type="password" name="password" placeholder="Password">
+      <span *ngIf="password.invalid && password.touched" style="color: red;">Required</span>
+    </div>
+    <div class="mb-3">
+      <label for="mobile" class="form-label">mobile</label>
+      <input required class="form-control" ngModel #mobile="ngModel" minlength="12"  type="number" name="mobile" placeholder="mobile">
+      <span *ngIf="mobile.invalid && mobile.touched" style="color: red;">Required</span>
+    </div>
+    <div class="mb-3">
+      <label for="address" class="form-label">address</label>
+      <input required class="form-control" ngModel #address="ngModel"  type="address" name="address" placeholder="address">
+      <span *ngIf="address.invalid && address.touched" style="color: red;">Required</span>
+    </div>
+    <button *ngIf="userForm.valid" class="btn btn-danger">Submit </button>
+  </form>
+</div>
+
